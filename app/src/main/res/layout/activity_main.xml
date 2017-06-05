@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/habitNameTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter habit name..." />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/habitNameTF"
+        android:text="Enter" />
+
+    <ListView
+        android:id="@+id/habitsListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitBtn" />
+
+    <Button
+        android:id="@+id/deleteTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/habitsListView"
+        android:layout_toEndOf="@+id/submitBtn"
+        android:layout_toRightOf="@+id/submitBtn"
+        android:text="Clear Habits" />
+</RelativeLayout>
